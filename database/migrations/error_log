@@ -1,0 +1,1 @@
+[02-May-2019 08:53:18 UTC] PHP Fatal error:  Class 'Illuminate\Database\Migrations\Migration' not found in /home/phan9225/public_html/database/migrations/2018_05_16_041249_create_audits_table.php on line 19

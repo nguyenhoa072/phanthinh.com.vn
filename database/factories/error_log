@@ -1,0 +1,5 @@
+[02-May-2019 08:53:32 UTC] PHP Notice:  Undefined variable: factory in /home/phan9225/public_html/database/factories/UserFactory.php on line 16
+[02-May-2019 08:53:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/phan9225/public_html/database/factories/UserFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/phan9225/public_html/database/factories/UserFactory.php on line 16

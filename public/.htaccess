@@ -1,0 +1,47 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+    
+    RewriteRule (^|/)storage(/|$) - [F]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+    
+    #RewriteCond %{HTTPS} off
+    #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+#AuthType Basic
+#AuthName "Password Protected Area"
+#SetEnvIf Request_URI ^/storage require_auth=true
+#AuthUserFile ../.htpasswd
+#Require valid-user
+#require user admin
+
+SetEnvIf Request_URI ^/storage/ auth=1
+
+AuthName "Please login"
+AuthType Basic
+AuthUserFile ../.htpasswd
+
+# first, allow everybody
+Order Allow,Deny
+Satisfy any
+Allow from all
+Require valid-user
+# then, deny only if required
+Deny from env=auth

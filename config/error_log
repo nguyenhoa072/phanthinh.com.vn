@@ -1,0 +1,4 @@
+[02-May-2019 08:51:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/phan9225/public_html/config/backup.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/phan9225/public_html/config/backup.php on line 25

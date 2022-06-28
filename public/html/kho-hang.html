@@ -1,0 +1,1560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/datatables.bootstrap4.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav-scroller bg-white shadow-sm">
+      <div class="container p-0">
+        <nav class="nav nav-underline">
+          <a class="nav-link" href="gioi-thieu.html">Giới thiệu</a>
+          <a class="nav-link active" href="kho-hang.html">Kho hàng có sẵn</a>
+          <a class="nav-link" href="lien-he.html">Liên hệ</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-sm-auto text-center mr-auto my-2">
+          <a href="#" class="logo-link">PHAN THINH</a>
+        </div>
+        <div class="col-auto d-none d-lg-block my-4 mr-5 pr-5">
+          <form class="form-inline search">
+            <input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Search">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </form>
+        </div>
+        <div class="col-auto box-phone d-none d-sm-block">
+          <div class="media">
+            <div class="mr-3"><i class="fas fa-phone-volume" style="font-size: 48px;"></i></div>
+            <div class="media-body"><a href="#" class="hotline-link"><span>Hotline</span> 0909.123.456</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+      <div class="container">
+        <span class="navbar-brand d-md-none" href="#">Menu</span>
+        <button class="navbar-toggler" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse justify-content-md-center">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-toggle="dropdown">Omron</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/Omron/Dieu-Khien-Lap-Trinh">Điều Khiển Lập Trình</a>
+                <a class="dropdown-item" href="/Omron/Dieu-Khien-Nhiet-Do">Điều Khiển Nhiệt Độ</a>
+                <a class="dropdown-item" href="/Omron/Dau-Do-Nhiet-Do">Đầu Dò Nhiệt Độ</a>
+                <a class="dropdown-item" href="/Omron/Cam-Bien-Quang">Cảm Biến Quang</a>
+                <a class="dropdown-item" href="/Omron/Cam-Bien-Tu---Dien-Dung">Cảm Biến Từ - Điện Dung</a>
+                <a class="dropdown-item" href="/Omron/Bo-Ma-Hoa-Xung(Encoder)">Bộ Mã Hóa Xung(Encoder)</a>
+                <a class="dropdown-item" href="/Omron/Bo-Nguon-Xung">Bộ Nguồn Xung</a>
+                <a class="dropdown-item" href="/Omron/Bo-Xu-Ly-Tin-Hieu-Va-Phu-Kien">Bộ Xử Lý Tín Hiệu Và Phụ Kiện</a>
+                <a class="dropdown-item" href="/Omron/Bo-Dieu-Khien-Muc-61F">Bộ Điều Khiển Mức 61F</a>
+                <a class="dropdown-item" href="/Omron/Bien-Tan">Biến Tần</a>
+                <a class="dropdown-item" href="/Omron/Bo-Dinh-Thoi-Gian">Bộ Định Thời Gian</a>
+                <a class="dropdown-item" href="/Omron/Relay-Co-va-Ban-Dan">Relay Cơ và Bán Dẫn</a>
+                <a class="dropdown-item" href="/Omron/Man-Hinh-Giao-Dien">Màn Hình Giao Diện</a>
+                <a class="dropdown-item" href="/Omron/Cong-Tac-Hanh-Trinh">Công Tắc Hành Trình</a>
+                <a class="dropdown-item" href="/Omron/Bo-Dem">Bộ Đếm</a>
+                <a class="dropdown-item" href="/Omron/Relay-Giam-Sat-va-Bao-Ve">Relay Giám Sát và Bảo Vệ</a>
+                <a class="dropdown-item" href="/Omron/Dong-Ho-Do-Dien-Nang">Đồng Hồ Đo Điện Năng</a>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">YASKAWA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SHIHLIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SCHNEIDER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">KINCO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">YAKO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hãng Khác</a>
+            </li>
+          </ul>
+          <form class="form-inline search d-md-none">
+            <input class="form-control w-100" type="text" placeholder="Tìm kiếm" aria-label="Search">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="store mt-4">
+      <h3>Kho hàng có sẵn</h3>
+      <hr>
+      <table id="KhoHangCoSan" class="table table-bordered table-hover" style="width: 100%">
+        <thead>
+          <tr>
+            <th>Tên hàng</th>
+            <th>Nhóm hàng</th>
+            <th class="text-center">Đơn vị
+            </th>
+            <th class="text-center">Số lượng
+            </th>
+            <th class="text-right">Đơn giá
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">3G3JZ-A4007</td>
+            <td>Biến Tần</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">3G3MV-A4037</td>
+            <td>Biến Tần</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">C200HG-CPU43-E</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1E-E10DT-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1E-E30SDR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">4</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1E-E40SDR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">4</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1E-N40SDR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1E-N60SDR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1E-N20DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1E-N40DT-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1H-X40DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1H-X40DT-D</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1H-XA40DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1H-XA40DT-D</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1L-L14DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1L-L20DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1L-M30DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1L-M40DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1L-M60DR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1L-M60DT-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-CIF01</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">4</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-CIF11</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">4</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-CIF41</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-8ER</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-8ET</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-8ED</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-16ER</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-16ET</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-20EDR1</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-20EDT</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-32ER</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-32ET</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-40EDR</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CP1W-40EDT</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CPM1A-40CDR-A-V1</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CPM2AH-20CDR-A</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CQM1H-CPU51</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CQM1-OC222</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CQM1-OD214</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1W-PA202</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1W-PA205R</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1W-PD025</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1M-CPU11</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1M-CPU12</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1M-CPU13</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1M-CPU21</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1M-CPU22</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ1M-CPU23</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ2M-CPU11</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ2M-CPU12</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ2M-CPU13</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ2M-CPU31</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ2M-CPU32</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CJ2M-CPU33</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CS1G-CPU43H</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">USB-CIF02</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">USB-CN226</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">CS1W-CIF31</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">ZEN-10C1AR-A-V2</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">ZEN-10C1DR-D-V2</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">ZEN-20C1AR-A-V2</td>
+            <td>Bộ Điều Khiển Lập Trình</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">3</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5AC-CX3ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5AC-QX3ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5AC-RX3ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">4</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5AZ-R3MT AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CC-CX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">5</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CC-QX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">16</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CC-RX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CN-HC2M-500 AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CN-HQ2M-500 AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CN-HR2M-500 AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CN-Q2HBT AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CN-R2MT-500 AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CSL-QP AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CSL-QTC AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CSL-RP AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CSL-RTC AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CWL-Q1P AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CWL-Q1TC AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CWL-R1P AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CWL-R1TC AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CZ-C2ML AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CZ-C2MT AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CZ-Q2MT AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">3</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5CZ-R2MT AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5DC-CX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5DC-QX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5DC-RX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EC-CX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EC-QX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EC-RX2ASM-800</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EWL-Q1P AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EWL-Q1TC AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EWL-R1P AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EWL-R1TC AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E5EZ-R3MT AC100-240</td>
+            <td>Bộ Điều Khiển Nhiệt Độ</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E6B2-CWZ6C 1000P/R 2M</td>
+            <td>Bộ Mã Hóa Xung(Encoder)</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">3</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E6B2-CWZ6C 1024P/R 2M</td>
+            <td>Bộ Mã Hóa Xung(Encoder)</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E6B2-CWZ6C 2000P/R 2M</td>
+            <td>Bộ Mã Hóa Xung(Encoder)</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E6B2-CWZ6C 360P/R 2M</td>
+            <td>Bộ Mã Hóa Xung(Encoder)</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E6B2-CWZ6C 500P/R 2M</td>
+            <td>Bộ Mã Hóa Xung(Encoder)</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E6B2-CWZ6C 600P/R 2M</td>
+            <td>Bộ Mã Hóa Xung(Encoder)</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">3</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z01505CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z01512CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z01524CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z03505CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z03512CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z03524CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z05005CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z05012CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z05024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z10005CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z10012CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z10024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z10048CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z15005CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z15012CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z15024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z15048CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JC-Z35024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G03505CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G03512CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G03515CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G03524CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G05005CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G05012CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G05024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G10005CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G10012CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G10024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G10048CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G15005CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G15012CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G15024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G15048CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G30024CD</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8JX-G60024C</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VK-C06024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">11</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VK-C12024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">12</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VK-C24024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VK-C48024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-01505</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-01512</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-01524</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-03005</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-03012</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-03024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-06024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-12024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-18024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">S8VS-24024</td>
+            <td>Bộ Nguồn Xung</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K33-A</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K33-B</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K33-CPA</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K33-CPB</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K33-L1A</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K33-L1B</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K34-C1</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K34-C2</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K35-1</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-CNB AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-HTA AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-RNB AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-VLC AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-XAA AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-XAD AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-XVA AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3HB-XVD AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3MA-F-A2 AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3MA-J-A2 AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">K3MA-L-C AC100-240</td>
+            <td>Bộ Xử Lý Tín Hiệu Và Phụ Kiện</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2A-M12KS04-M1-B1</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2A-M12KS04-WP-B1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2A-M12KS04-WP-C1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E2-X5MB1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">6</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E2-X5MB1-M1</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">5</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E2-X5MC1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E-X1C1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">1</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E-X1R5F1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">12</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E-X1R5F1-M1</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">7</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E-X2F1-M1</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2E-X5ME1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">9</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2K-C25ME1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">5</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2K-C25MF1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E2K-C25MY1 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3F2-7B4-P1</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3F2-7C4 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">4</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3F2-DS10B4-N 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3F2-DS10C4-P1</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3F2-DS10B4-P1</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3F2-DS30B4 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DN11 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">3</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DN12 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">2</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DN13 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DN21</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DN22</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DP11 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">13</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DP12 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">20</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DP13 2M</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">Liên hệ</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+          <tr>
+            <td class="name">E3FA-DP21</td>
+            <td>Cảm Biến</td>
+            <td class="text-center">Cái</td>
+            <td class="text-center">3</td>
+            <td class="text-right">Liên hệ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>PHAN THINH</h1>
+        </div>
+        <div class="col-sm-6">
+          <h5 class="toggle">Liên hệ chúng tôi<a class="mobile_togglemenu">&nbsp;</a></h5>
+          <ul class="list-unstyled">
+            <li class="address"><i class="fas fa-map-marker-alt fa-fw"></i> Số 04, Đường Số 37, P 4, Q 4, TP HCM</li>
+            <li class="phoneno"><i class="fas fa-phone fa-fw"></i> (028).6261 7273</li>
+            <li class="email"><i class="fas fa-envelope fa-fw"></i> <a href="#">support@yourstore.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
