@@ -20,7 +20,7 @@ $settings = \App\Helpers\General::get_settings();
     @loadLocalCSS(/html/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css)
     @loadLocalCSS(/html/css/style.css)
     @loadLocalCSS(/html/css/theme.css)
-    <title>@yield('title') :: <?=config('app.name', 'Phan Thịnh')?></title>
+    <title>@yield('title') - <?=config('app.name', 'Phan Thịnh')?></title>
     <meta name="keywords" content="@yield('og_keywords', $settings['og_keywords']['value']??'')"/>
     <meta name="description" content="@yield('og_description', $settings['og_description']['value']??'')"/>
     @yield('after_style')

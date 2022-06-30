@@ -64,7 +64,6 @@
                                     <tr>
                                         <th class="text-nowrap">Tên sản phẩm</th>
                                         <th style="min-width: 250px">Mô tả</th>
-                                        <th class="text-nowrap">Tồn kho</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -73,7 +72,6 @@
                                         <td class="text-nowrap table-msp"><strong><?=$item['name']?></strong></td>
                                         <td><?=$item['short_description']?></td>
                                         <td class="d-none"><?=number_format($item['price'])?></td>
-                                        <td class="text-right"><?=isset($item['amount']) && $item['amount'] ? $item['amount'] : 'Liên hệ'?></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

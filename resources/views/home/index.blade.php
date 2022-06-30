@@ -72,7 +72,7 @@ $settings = \App\Helpers\General::get_settings();
                 </div>
                 @if (@product_home)
                 <div class="box">
-                    <h5 class="box-title box-title-three mb-4"><span>Hotline (028) 22 537 797 - ZALO 0833 101 819</span></h5>
+                    <h5 class="box-title box-title-three mb-4"><span>Hotline {{@$settings['hotline']['value']}} - ZALO {{@$settings['phone']['value']}}</span></h5>
                     <div class="row">
                         @foreach($product_home as $product_home_item)
                             <?php

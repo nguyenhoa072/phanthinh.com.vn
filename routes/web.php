@@ -24,8 +24,8 @@
 // Trang chủ
 Route::get('/', ['as' => 'home', 'uses' => 'Home\IndexController@index']);
 Route::get('/lien-he.html', ['as' => 'contact', 'uses' => 'Home\IndexController@contact']);
-Route::get('/kho-hang.html', ['as' => 'warehouse', 'uses' => 'Home\IndexController@warehouse']);
-Route::get('/ajax-warehouse', ['as' => 'ajax-warehouse', 'uses' => 'Home\IndexController@ajax_warehouse']);
+// Route::get('/kho-hang.html', ['as' => 'warehouse', 'uses' => 'Home\IndexController@warehouse']);
+// Route::get('/ajax-warehouse', ['as' => 'ajax-warehouse', 'uses' => 'Home\IndexController@ajax_warehouse']);
 Route::get('/tim-kiem', ['as' => 'search', 'uses' => 'Home\IndexController@search']);
 Route::get('/san-pham', ['as' => 'products',
     'uses' => 'Home\IndexController@products']);
