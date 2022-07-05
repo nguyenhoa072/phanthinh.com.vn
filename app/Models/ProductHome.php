@@ -14,7 +14,7 @@ class ProductHome extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = ['name', 'product_code', 'description', 'short_description', 'category_id', 'manufacturer_id', 'order',
-        'image', 'image_url', 'price', 'amount', 'created_at', 'updated_at', 'is_deleted', 'is_home', 'status', 'link_static'];
+        'image', 'image_url', 'price', 'amount', 'color', 'created_at', 'updated_at', 'is_deleted', 'is_home', 'status', 'link_static'];
 
 //    protected $hidden = ['deleted_at', 'is_deleted'];
 
@@ -32,7 +32,7 @@ class ProductHome extends Model
 
     public static function getProductHome() {
 
-        $objects = self::select('id', 'product_code', 'short_description', 'image', 'image_url', 'link_static')
+        $objects = self::select('id', 'product_code', 'short_description', 'image', 'image_url', 'link_static', 'color')
             ->where('is_deleted', 0)
             ->where('status', 1)
             ->orderBy('order', 'asc');

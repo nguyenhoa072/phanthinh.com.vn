@@ -48,7 +48,16 @@ $action_title = isset($object['id'])?'Cập nhật':'Thêm mới';
                                             {!! Form::text("product_code", @$object['product_code'], ['class' => 'form-control']) !!}
                                             <label id="product_code-error" class="error" for="product_code">{!! $errors->first("product_code") !!}</label>
                                         </div>
-                                    </div>                             
+                                    </div>  
+                                    <div class="form-group">
+                                        <label class="col-xs-4 control-label" for="form-field-1">
+                                            Màu sắc
+                                        </label>
+                                        <div class="col-xs-8">
+                                            {!! Form::text("color", @$object['color'], ['id' => 'color', 'class' => 'form-control', 'data-swatches' => "#ef9a9a|#90caf9|#a5d6a7|#fff59d|#ffcc80|#bcaaa4|#eeeeee|#f44336|#2196f3|#4caf50|#ffeb3b|#ff9800|#795548|#9e9e9e"]) !!}
+                                            <label id="color-error" class="error" for="color">{!! $errors->first("color") !!}</label>
+                                        </div>
+                                    </div>                              
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label" for="form-field-1">
                                             Ưu tiên
@@ -209,10 +218,24 @@ $action_title = isset($object['id'])?'Cập nhật':'Thêm mới';
     <script src="/html-admin/plugins/ckfinder/ckfinder.js"></script>
     <script type="text/javascript" src="/html-admin/plugins/ckeditor/adapters/jquery.js"></script>
     <script type="text/javascript" src="/html-admin/plugins/ckeditor/config.js"></script>
+    <script type="text/javascript" src="/plugins/Color-Picker-Plugin-jQuery-MiniColors/jquery.minicolors.min.js"></script>
+    <link rel="stylesheet" href="/plugins/Color-Picker-Plugin-jQuery-MiniColors/jquery.minicolors.css">
 
     <script type="text/javascript">
-
         $(document).ready(function() {
+            var color =$('#color');
+
+            color.minicolors({
+                swatches: color.attr('data-swatches') ? color.attr('data-swatches').split('|') : [],
+                change: function(value, opacity) {
+                    if( !value ) return;
+                    if( opacity ) value += ', ' + opacity;
+                    if( typeof console === 'object' ) {
+                    console.log(value);
+                    }
+                },
+                theme: 'bootstrap'
+            });
 
         @if (session()->has('error'))
             @if (session('error'))
@@ -245,7 +268,10 @@ $action_title = isset($object['id'])?'Cập nhật':'Thêm mới';
                     name: "required",
                     product_code: "required",
                     category_id: "required",
-                    link_static: "required"
+                    link_static: "required",
+                    color: {
+                        maxlength: 7
+                    }
                 },
                 messages: {
                     name: "Nhập tiêu đề bài viết",
@@ -301,6 +327,7 @@ $action_title = isset($object['id'])?'Cập nhật':'Thêm mới';
 
             init_select2('.select2');
         });
+        
         function add_image($image_location, id) {
             if (!$image_location) return false;
             id = id || 0;

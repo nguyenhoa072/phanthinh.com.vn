@@ -139,9 +139,9 @@ a:hover {
   border: 0 none
 }
 
-.box .card-header a{
+/* .box .card-header a{
   color: rgba(24, 106, 164, 1);
-}
+} */
 
 .box .card-header a:hover{
   text-shadow: 0 0 0 rgba(24, 106, 164, 1);   

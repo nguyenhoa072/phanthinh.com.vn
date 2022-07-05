@@ -81,7 +81,11 @@ $settings = \App\Helpers\General::get_settings();
                         <div class="col-xl-3 col-md-6 mb-4 pb-1">
                             <div class="card h-100">                        
                                 <div class="card-header p-3">
-                                    <h2 class="card-title text-center m-0"><a href="{{$product_home_item['link_static']}}">{{$product_home_item['product_code']}}</a></h2>
+                                    <h2 class="card-title text-center m-0">
+                                        <a href="{{$product_home_item['link_static']}}" style="color: {{$product_home_item['color']}}">
+                                            {{$product_home_item['product_code']}}
+                                        </a>
+                                    </h2>
                                 </div>
                                 <div class="card-body px-3 pt-0 d-flex">                    
                                     <a href="{{$product_home_item['link_static']}}" class="align-self-center mx-auto">
